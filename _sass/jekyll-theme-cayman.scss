@@ -47,6 +47,17 @@ body {
 }
 .content > * {
   grid-column: 3;
+  word-wrap: break-word;
+}
+pre{
+  word-wrap: normal;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+img{
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .content.footer {
   grid-row: 3;
