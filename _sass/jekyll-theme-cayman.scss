@@ -178,10 +178,12 @@ a.colorlink::after {
   right: 0;
   background: var(--link-gradient);
   transform: scale(0, 1);
-  transition: 0.1s transform;
+  visibility: hidden;
+  transition: 0.1s transform, 0.1s visibility;
 }
 .markdown a:hover::after,
 a.colorlink:hover::after {
+  visibility: visible;
   transform: scale(1, 1);
 }
 a.tablink {
