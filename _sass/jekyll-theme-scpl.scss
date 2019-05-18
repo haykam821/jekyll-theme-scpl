@@ -203,7 +203,7 @@ a {
 	white-space: nowrap;
 }
 
-.markdown a,
+.markdown a:not(.tryitbtn),
 a.colorlink {
 	position: relative;
 	white-space: nowrap;
@@ -297,6 +297,7 @@ h6 {
 	font-weight: normal;
 }
 
+pre,
 .code {
 	margin: 20px;
 	padding: 0;
@@ -336,6 +337,7 @@ h6 {
 				display: block;
 			}
 		}
+		code,
 		textarea {
 			padding: 10px;
 			caret-color: #3b83f2;
