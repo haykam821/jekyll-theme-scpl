@@ -10,3 +10,10 @@ Array.from(document.getElementsByClassName("code")).forEach(el => {
 		tryitbtn.setAttribute("href", "https://editor.scpl.dev/?scpl="+encodeURIComponent(t.value))
 	});
 })
+
+// Fix for fragment links breaking page scrolling
+setTimeout(() => {
+	let intendedScroll = document.getElementById("fragmentfix").scrollTop;
+	document.getElementById("fragmentfix").scrollTop = 0;
+	window.scrollTo(0, intendedScroll);
+}, 0)
