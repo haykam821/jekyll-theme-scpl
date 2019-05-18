@@ -1,8 +1,25 @@
 :root {
 	--banner-background: #29374c;
-	--heading-gradient: linear-gradient(90deg, #e06dc6 10%, #f27062 31%, #67bea4 47%, #3b83f2 100%);
-	--link-gradient: linear-gradient(to bottom right, #4e91a9 30%, #3979d6 85%, #4a94be 100%);
-	--heading-gradient-2: linear-gradient(90deg, #e06dc6 10%, #f27062 31%, #67bea4 47%, #3b83f2 100%);
+	--heading-gradient: linear-gradient(
+		90deg,
+		#e06dc6 10%,
+		#f27062 31%,
+		#67bea4 47%,
+		#3b83f2 100%
+	);
+	--link-gradient: linear-gradient(
+		to bottom right,
+		#4e91a9 30%,
+		#3979d6 85%,
+		#4a94be 100%
+	);
+	--heading-gradient-2: linear-gradient(
+		90deg,
+		#e06dc6 10%,
+		#f27062 31%,
+		#67bea4 47%,
+		#3b83f2 100%
+	);
 }
 
 html {
@@ -15,7 +32,8 @@ body {
 	overflow-y: scroll;
 	margin: 0;
 	background-color: white;
-	font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", Helvetica,
+		Arial, sans-serif;
 }
 
 .scrollrubberbanding {
@@ -121,7 +139,12 @@ img {
 }
 
 .markdown {
-	h1, h2, h3, h4, h5, h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		color: var(--banner-background);
 	}
 }
@@ -133,7 +156,12 @@ img {
 @supports (background-clip: text) or (-webkit-background-clip: text) {
 	.banner {
 		.markdown {
-			h1, h2, h3, h4, h5, h6 {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
 				background: var(--heading-gradient);
 				-webkit-background-clip: text;
 				background-clip: text;
@@ -154,7 +182,12 @@ img {
 @supports not (background-clip: text) {
 	.banner {
 		.markdown {
-			h1, h2, h3, h4, h5, h6 {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
 				color: #3979d6;
 			}
 		}
@@ -169,28 +202,30 @@ a {
 	white-space: nowrap;
 }
 
-.markdown a, a.colorlink {
+.markdown a,
+a.colorlink {
 	position: relative;
 	white-space: nowrap;
 
-    @supports (background-clip: text) or (-webkit-background-clip: text) {
-    	& {
-    		background: var(--link-gradient);
-    		-webkit-background-clip: text;
-    		background-clip: text;
-    		-webkit-text-fill-color: transparent;
-    		text-fill-color: transparent;
-    	}
-    }
+	@supports (background-clip: text) or (-webkit-background-clip: text) {
+		& {
+			background: var(--link-gradient);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			text-fill-color: transparent;
+		}
+	}
 
-    @supports not (background-clip: text) {
-    	& {
-    		color: #007aff;
-    	}
-    }
+	@supports not (background-clip: text) {
+		& {
+			color: #007aff;
+		}
+	}
 }
 
-.markdown a::after, a.colorlink::after {
+.markdown a::after,
+a.colorlink::after {
 	content: "";
 	position: absolute;
 	bottom: 1px;
