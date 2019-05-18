@@ -262,6 +262,11 @@ a {
 	}
 }
 
+hr {
+	border-bottom: 1px dashed rgba(103, 190, 164, 0.522);
+	border-top: 1px dashed rgba(103, 190, 164, 0.522);
+}
+
 .tablink {
 	font-weight: normal;
 	border: 1px solid rgba(200, 200, 200, 0.5);
