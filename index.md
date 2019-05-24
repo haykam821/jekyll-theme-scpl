@@ -1,5 +1,7 @@
 ---
 layout: default
+title: ScPL Theme
+description: Jekyll theme for the ScPL programming language for Shortcuts
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
