@@ -25,6 +25,45 @@
 			rel="stylesheet"
 			href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
 		/>
+
+		<link
+			rel="shortcut icon"
+			href="{{ '/assets/favicon/favicon.ico?v=' | append: site.github.build_revision | relative_url }}"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="{{ '/assets/favicon/apple-touch-icon.png?v=' | append: site.github.build_revision | relative_url }}"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="{{ '/assets/favicon/favicon-32x32.png?v=' | append: site.github.build_revision | relative_url }}"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="{{ '/assets/favicon/favicon-16x16.png?v=' | append: site.github.build_revision | relative_url }}"
+		/>
+		<link
+			rel="manifest"
+			href="{{ '/assets/favicon/site.webmanifest?v=' | append: site.github.build_revision | relative_url }}"
+		/>
+		<link
+			rel="mask-icon"
+			href="{{ '/assets/favicon/safari-pinned-tab.svg?v=' | append: site.github.build_revision | relative_url }}"
+			color="#29374c"
+		/>
+		<meta name="msapplication-TileColor" content="#29374c" />
+		<meta name="theme-color" content="#29374c" />
+
+		<link rel="manifest" href="favicon/manifest.json" />
 		<title>
 			{{ site.title | default: site.github.repository_name }} | ScPL, An easier
 			way to write shortcuts
@@ -41,8 +80,7 @@
 				<div class="content">
 					<div class="banner expandup">
 						<h1 class="colorheader giant">
-							<span class="icon wand"></span>
-							ScPL
+							<span class="icon wand"></span>ScPL
 						</h1>
 						<h6>An easier way to write shortcuts</h6>
 						<div style="display: flex;justify-content: center;flex-wrap: wrap;">
