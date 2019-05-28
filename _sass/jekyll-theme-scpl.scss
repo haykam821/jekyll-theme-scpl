@@ -253,6 +253,10 @@ a.colorlink {
 	}
 }
 
+p {
+	line-height: 25px;
+}
+
 .markdown a::after,
 a.colorlink::after {
 	content: "";
@@ -288,6 +292,22 @@ a {
 			border-color: #67bea4;
 		}
 	}
+	&.blandlink.iconlink {
+		border: none !important;
+		background: left center / 30px no-repeat;
+		padding: 25px 0;
+		padding-left: 35px;
+		opacity: .8;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&.iconlink.githublink {
+		background-image: url('../img/github.png');
+	}
+	&.iconlink.discordlink {
+		background-image: url('../img/discord.png');
+	}
 }
 
 hr {
@@ -306,6 +326,7 @@ hr {
 	transition: 0.1s background-color, 0.1s color;
 	&:hover {
 		background-color: rgba(200, 200, 200, 0.2);
+		border-color: #eee;
 	}
 	&:active {
 		opacity: 0.7;
