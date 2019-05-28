@@ -325,8 +325,8 @@ hr {
 	margin-bottom: 10px;
 	transition: 0.1s background-color, 0.1s color;
 	&:hover {
-		background-color: rgba(200, 200, 200, 0.2);
-		border-color: #eee;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-color: #ffffff80;
 	}
 	&:active {
 		opacity: 0.7;
