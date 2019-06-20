@@ -43,7 +43,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	margin: 0;
-	background-color: white;
+	background-color: #29374c;
 	font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", Helvetica,
 		Arial, sans-serif;
 }
@@ -414,9 +414,6 @@ iframe {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		background-color: #29374c;
-	}
 	.realmain {
 		background-color: darken(#29374c, 15%);
 		color: #ccc;
