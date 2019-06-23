@@ -293,10 +293,12 @@ a {
 		}
 	}
 	&.blandlink.iconlink {
+		display: inline-block;
 		border: none !important;
 		background: left center / 30px no-repeat;
-		padding: 25px 0;
-		padding-left: 35px;
+		padding: 10px 0;
+		padding-left: 37px;
+		margin-right: 10px;
 		opacity: .8;
 		&:hover {
 			opacity: 1;
