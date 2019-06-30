@@ -43,7 +43,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	margin: 0;
-	background-color: white;
+	background-color: #29374c;
 	font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", Helvetica,
 		Arial, sans-serif;
 }
@@ -416,4 +416,36 @@ pre,
 iframe {
 	width: 100%;
 	height: 300px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.realmain {
+		background-color: darken(#29374c, 15%);
+		color: #ccc;
+	}
+
+	.markdown {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #67bea4;
+		}
+	}
+
+	.markdown a:not(.tryitbtn),
+	a.colorlink {
+		@supports not (background-clip: text) {
+			& {
+				color: #66b0ff;
+			}
+		}
+	}
+
+	textarea, code {
+		background-color: darken(#29374c, 7.5%);
+		color: #ccc;
+	}
 }
